@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --foreground-rgb: 6, 75, 175;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -31,3 +31,38 @@ body {
     text-wrap: balance;
   }
 }
+
+.white {
+  background: -webkit-linear-gradient(0deg, rgba(6,75,175,1) 0%, rgba(201,111,229,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shimmers {
+  position: relative;
+  background-color: rgb(6, 75, 175);
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.shimmers::before {
+  content: "";
+  transform: translateX(-100%);
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+}
+
+.shimmers:hover::before {
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+
+.shimmers:hover {
+  color: rgb(6, 75, 175);
+}
+
+
