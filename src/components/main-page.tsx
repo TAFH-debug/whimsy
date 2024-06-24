@@ -41,7 +41,7 @@ export function MainPage() {
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 We harness the power of Artificial Intelligence to revolutionize the way games are created.
-                Whether you're an indie developer, a game design studio, or just a passionate gamer with an idea, our cutting-edge technology brings your vision to life effortlessly.
+                Whether you&apos;re an indie developer, a game design studio, or just a passionate gamer with an idea, our cutting-edge technology brings your vision to life effortlessly.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <a
